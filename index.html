@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>升级浏览器以获得更好的体验</title>
+    <title>LEO code - 升级浏览器以获得更好的体验</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,8 +47,38 @@
 <body>
     <div class="container">
         <h1>升级浏览器以获得更好的体验</h1>
-        <p>您正在使用的浏览器不支持本网页的某些功能。为了获得最佳体验，请安装最新版本的Microsoft Edge浏览器。</p>
-        <a href="https://www.microsoft.com/edge" target="_blank">下载Microsoft Edge</a>
+        <p>您正在使用的浏览器不支持访问本网站。为了获得最佳体验，请安装主流浏览器访问。</p>
+        <a href="https://www.google.cn/intl/zh-CN/chrome/" target="_blank">下载Chrome浏览器</a>
+        <a href="https://www.microsoft.com/zh-cn/edge/download/" target="_blank">下载Edge浏览器</a>
+        <a href="https://www.mozilla.org/zh-CN/firefox/new/" target="_blank">下载FireFox浏览器</a>
     </div>
 </body>
+    
+<script type="text/javascript">
+        window.onload = function(){
+            //屏蔽键盘事件
+            document.onkeydown = function (){
+                var e = window.event || arguments[0];
+                //F12
+                if(e.keyCode == 123){
+                    return false;
+                //Ctrl+Shift+I
+                }else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){
+                    return false;
+                //Shift+F10
+                }else if((e.shiftKey) && (e.keyCode == 121)){
+                    return false;
+                //Ctrl+U
+                }else if((e.ctrlKey) && (e.keyCode == 85)){
+                    return false;
+                }
+            };
+            //屏蔽鼠标右键
+            document.oncontextmenu = function (){
+                return false;
+            }
+        }
+
+    </script>
+
 </html>
