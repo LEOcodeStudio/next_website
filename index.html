@@ -28,6 +28,8 @@
           errorTracker: true
         };
       </script>
+      <script src="//s1.hdslb.com/bfs/seed/log/report/log-reporter.js"></script>
+          <script src="https://s1.hdslb.com/bfs/activity-seed/activity/activity/activity-report.js"></srcipt></script>
   <title>LEO code - 403 拒绝访问</title>
   <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1454899_pqhvobved2o.css">
   <!-- <script type="text/javascript" src="//www.bilibili.com/gentleman/polyfill.js?features=Promise%2CObject.assign%2CString.prototype.includes%2CNumber.isNaN"></script> -->
@@ -180,28 +182,4 @@
   </div>
 
 
-
-<script>
-  document.getElementById('download').onclick = function () {
-    var downloadUrl = ''
-
-    var clientType = /(Mac|iPhone|iPod|iPad)/i.test(window.navigator.platform) ? 'mac' : 'win'
-      var originUrl =
-          clientType === 'win' ?
-            'https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe' :
-            'https://dl.hdslb.com/mobile/fixed/pc_electron_mac/bili_mac.dmg'
-      downloadUrl = originUrl + '?t=' + new Date().getFullYear() +  (new Date().getMonth() + 1) + new Date().getDate();
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', '//api.bilibili.com/x/web-frontend/getappversion?target=pc_electron&cdn_url=' + originUrl, true);
-      xhr.withCredentials = true;
-      xhr.onreadystatechange = function () {
-        if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-          var data = JSON.parse(xhr.responseText)
-          if (data && data.data.sole_cdn_url) {
-              window.open(data.data.sole_cdn_url)
-          }
-        }
-      }
-      xhr.send(null);
-  }
-</script></body></html>
+</body></html>
