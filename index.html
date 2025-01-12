@@ -1,185 +1,54 @@
-
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="spm_prefix" content="888.71946">
-      <script type="text/javascript">
-        var msource;
-        try {
-          var u = new URL(location.href);
-          var sp = u.searchParams;
-          msource = sp.get('msource') || sp.get('from') || sp.get('source_from') || sp.get('from_module')
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>升级浏览器以获得更好的体验</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        catch(e){console.warn('get page source from query failed', e)}
-        window.activity = {id: 69640, spmId: '888.71946'};
-        window.reportMsgObj = {};
-        
-        var ua = window.navigator.userAgent
-        var buvidMatch = ua.match(/Buvid\/([a-zA-Z0-9]+)/)
-        var appBuvid = buvidMatch && buvidMatch.length > 0 ? buvidMatch[1] : ''
-        window.reportConfig = {
-          sample: 1,
-          extMsgs: {
-            appBuvid: appBuvid,
-          },
-          scrollTracker: true,
-          msgObjects: 'reportMsgObj',
-          pvMsg: {msource: msource},
-          errorTracker: true
-        };
-      </script>
-      <script src="//s1.hdslb.com/bfs/seed/log/report/log-reporter.js"></script>
-          <script src="https://s1.hdslb.com/bfs/activity-seed/activity/activity/activity-report.js"></srcipt></script>
-  <title>LEO code - 403 拒绝访问</title>
-  <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1454899_pqhvobved2o.css">
-  <!-- <script type="text/javascript" src="//www.bilibili.com/gentleman/polyfill.js?features=Promise%2CObject.assign%2CString.prototype.includes%2CNumber.isNaN"></script> -->
-  <style>
-    * { padding: 0; margin: 0; box-sizing: border-box; font-family: Helvetica Neue, Microsoft YaHei,
-      sans-serif;}
-    ul, li { list-style: none; }
-    a:hover {text-decoration:none;}
-    ins,a {text-decoration:none;}
-    a:focus,*:focus {outline:none;}
-
-    .b-content { width: 650px; margin: 50px auto; font-size: 14px; color: #999; }
-    .pic-box { padding-bottom: 10px; }
-    /* .text-box { padding-bottom: 20px; border-bottom: 1px solid #eee; } */
-    .text-box .title {
-      text-align: center;
-      margin: 40px 0 25px 0;
-      position: relative;
-    }
-    .text-box .title span {
-      background-color: #fff;
-      padding: 0 8px;
-      color: #9499A0;
-    }
-    .text-box .title-line {
-      width: 100%;
-      display: block;
-      height: 1px;
-      background-color: #F1F2F3;
-      margin-top: -10px;
-    }
-    .text-box .list {height: 90px;}
-    .text-box .list li a { float: left; width: 100px; text-align: center; line-height: 24px; color: #666;}
-    .text-box .list li .iconfont{ font-size: 30px; }
-    .text-box .list li a span{ font-size: 12px; color: #999; }
-    .copyright {margin-top: 60px; text-align: center;}
-
-    ul {
-      display: flex;
-      justify-content: center;
-    }
-
-    .pic-box {
-      display: flex;
-      flex-direction: column;
-      /* align-items: center; */
-    }
-    .pic-box p {
-      font-size: 14px;
-      line-height: 25px;
-      color: #61666D;
-    }
-
-    .center-title {
-      color: #000000;
-      font-size: 20px;
-      text-align: center;
-      margin: 50px 0 12px 0;
-    }
-    .highline {color: #FF6699;}
-
-    .browser-item {
-      height: 114px;
-      background: #F1F2F3;
-      border-radius: 8px;
-      width: 88px;
-      margin-right: 8px;
-      padding: 20px 0;
-      display: flex;
-      transition: 0.3s;
-    }
-    .browser-item:hover {
-      background: #E3E5E7;
-    }
-    .browser-item .iconfont {
-      margin-bottom: 8px;
-      display: inline-block;
-    }
-    .browser-name {
-      color: #61666D !important;
-      font-weight: bold;
-    }
-    .pic-box-logo {
-      width: 160px;
-      display: block;
-      margin: 0 auto;
-    }
-    .pc-down {
-      cursor: pointer;
-      margin: 0 auto;
-      width: 223px;
-      height: 51px;
-      background: #FF6699;
-      border-radius: 6px;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      padding: 0 20px;
-      margin-bottom: 20px;
-      transition: 0.3s;
-    }
-    .pc-down:hover {
-      background: #FF80AA;
-    }
-    .pc-down-icon {
-      margin-right: 10px;
-    }
-    .hint {
-      color: #FFFFFF;
-      opacity: 0.7;
-      font-size: 12px;
-    }
-  </style>
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            color: #0078d4;
+        }
+        .container p {
+            font-size: 18px;
+        }
+        .container a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #0078d4;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container a:hover {
+            background-color: #005a9e;
+        }
+    </style>
 </head>
 <body>
-  <div class="b-content">
-      <h1 class="center-title">您的浏览器版本过低</h1>
-      <p>您当前使用的浏览器版本过低，已无法正常访问此页面。您可以通过 <span class="highline">升级浏览器</span>继续访问，感谢您的支持与陪伴～</p>
+    <div class="container">
+        <h1>升级浏览器以获得更好的体验</h1>
+        <p>您正在使用的浏览器不支持本网页的某些功能。为了获得最佳体验，请安装最新版本的Microsoft Edge浏览器。</p>
+        <a href="https://www.microsoft.com/edge" target="_blank">下载Microsoft Edge</a>
     </div>
-      <div class="title"><span>升级您的浏览器</span><div class="title-line"></div></div>
-      <div class="list">
-        <ul>
-          <li class="browser-item">
-            <a href="https://www.google.cn/intl/zh-CN/chrome" target="_blank">
-              <i class="iconfont icon-chrome"></i><br>
-              <span class="browser-name">Chrome</span><br>
-              <span>Chrome浏览器</span>
-            </a>
-          </li>
-          <li class="browser-item">
-            <a href="https://www.mozilla.org/zh-CN/firefox/new" target="_blank">
-              <i class="iconfont icon-firefox"></i><br>
-              <span class="browser-name">Firefox</span><br>
-              <span>FireFox浏览器</span>
-            </a>
-          </li>
-          <li class="browser-item">
-            <a href="https://www.microsoft.com/zh-cn/edge/download" target="_blank">
-              <i class="iconfont icon-edge"></i><br>
-              <span class="browser-name">Edge</span><br>
-              <span>Edge浏览器</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">
-      © LEO code
-    </div>
-  </div>
-
-
-</body></html>
+</body>
+</html>
